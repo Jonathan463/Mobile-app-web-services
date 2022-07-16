@@ -1,6 +1,7 @@
 package com.example.mobileappwebservices.controller;
 
-import com.example.mobileappwebservices.DTO.UserDTO;
+import com.example.mobileappwebservices.DTO.UserRequest;
+import com.example.mobileappwebservices.DTO.UserResponse;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -13,8 +14,8 @@ public class UserController {
     }
 
     @PostMapping()
-    public String addUser(@RequestBody UserDTO userDTO){
-        return "user added";
+    public UserResponse addUser(@RequestBody UserRequest userRequest){
+        return null;
     }
 
     @PutMapping()
